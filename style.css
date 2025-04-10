@@ -31,7 +31,7 @@
 
   .nav__hero {
     display: flex;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   
   .nav__image {
@@ -67,7 +67,6 @@
   .nav__menu {
     list-style: none;
     display: flex;
-    gap: 1rem;
   }
 
 
@@ -75,7 +74,7 @@
     text-decoration: none;
     color: #f5d1a6; 
     font-weight: 500;
-    padding-right: 20px;
+    padding-right: 10px;
   }
 
   .nav__link:hover {
@@ -200,7 +199,6 @@
     color: white;
     font-weight: 600;
     font-size: larger;
-    padding-left: 20px;
   }
   
   .footer__logo--family {
@@ -216,12 +214,12 @@
     align-items: flex-end;
     text-align: right;
     line-height: 1.4;
-    padding-right: 20px;
+    padding-right: 0;
   }
   
   .footer__credits p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #f5d1a6;
   }
   
