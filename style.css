@@ -170,7 +170,7 @@
     padding: 1rem;
   }
 
-/*begin Cast page accordion rules*/
+/*begin Award page accordion rules*/
 
 .details {
     max-width: 500px;
@@ -210,7 +210,7 @@
     transition: rotate 200ms ease-out;
   }
 
-/*end Cast page accordion rules*/
+/*end Award page accordion rules*/
 
   .footer {
     background-color: black;
