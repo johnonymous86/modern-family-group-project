@@ -88,6 +88,16 @@ main{
   min-height: 100vh;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_image {
+  width: 900px;
+  height: auto;}
+
 .footer {
   background-color: black;
   border-top: 2px solid #e0e0e0;
