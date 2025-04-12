@@ -51,6 +51,7 @@ body {
   
 .nav__logo--modern {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
     color: white;
     font-weight: 600;
     font-size: larger;
@@ -102,9 +103,11 @@ body {
     margin-bottom: 15px;
 }
 
+
 .background__title, .background__title--sub {
     letter-spacing: 2px;
 }
+
 
 .background__paragraph {
     font-size: 1.05rem;
