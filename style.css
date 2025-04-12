@@ -1,230 +1,182 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f5e8e0;
+    background: #f5e8e0;
     color: black;
     line-height: 1.6;
     padding: 0 20px;
-  }
+}
 
-  .nav {
+.nav {
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: black;
     border-bottom: 2px solid #e0e0e0;
     padding: 1rem 0;
-  }
+}
 
-  .nav__container {
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-  }
+}
 
-  .nav__hero {
+.nav__hero {
     display: flex;
     padding: 0 10px;
-  }
-  
-  .nav__image {
-    height: 150px;
-    width: 600px;
+}
+
+.nav__image {
+    width: 100%;
+    height: auto;
     border-radius: 4px;
     object-fit: cover;
-  }
+}
 
-  .nav__logo {
+.nav__logo {
     font-size: 1.8rem;
     font-weight: bold;
     display: flex;
     gap: 0.25rem;
     align-items: flex-start;
-  }
+}
   
-  .nav__logo--modern {
+.nav__logo--modern {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
     color: white;
     font-weight: 600;
     font-size: larger;
-    padding-left: 20px;
-  }
+}
   
-  .nav__logo--family {
+.nav__logo--family {
+    padding-left: 20px;
     font-family:'Times New Roman', Times, serif;
     color: #D72638;
     font-weight: 600;
     font-size: larger;
-  }
+}
 
-  .nav__menu {
+.nav__menu {
     list-style: none;
     display: flex;
-  }
+}
 
 
-  .nav__link {
+.nav__link {
     text-decoration: none;
     color: #f5d1a6; 
     font-weight: 500;
     padding-right: 10px;
-  }
-
-  .nav__link:hover {
-    color: #D72638;
-  }
-
-  .cast {
-    max-width: 1100px;
-    margin: 2rem auto;
-    text-align: center;
-  }
-  
-  .cast__title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #222;
-  }
-  
-  .cast__title--highlight {
-    color: #D72638;
-    font-family: 'Georgia', serif;
-  }
-
-  .cast__gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-  }
-  
-  .cast__member {
-    width: 180px;
-    height: 280px;
-    perspective: 1000px;
-  }
-
-  .cast__card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-
-  .cast__member:hover .cast__card {
-    transform: rotateY(180deg);
-  }  
-
-  .cast__card--front,
-.cast__card--back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  background-color: #fff;
-  border: 4px solid #D72638;
-  border-radius: 6px;
-  padding: 1rem;
-  box-sizing: border-box;
 }
 
-.cast__card--front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .cast__photo {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 4px;
-  }  
+.nav__link:hover {
+    color: #D72638;
+}
 
-  .cast__name {
-    margin-top: 0.75rem;
-    font-weight: 500;
-    color: #0047AB;
-    text-align: center;
-  }
-
-  .cast__card--back {
-    transform: rotateY(180deg);
+.background__main{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.background__title{
+    letter-spacing: 6px;
+    font-size: 40px;
     text-align: center;
-    color: #444;
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.background__title--sub{
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
 
 
-  /*Begin Awards page styles*/
+.background__title, .background__title--sub {
+    letter-spacing: 2px;
+}
 
-  .awards__content {
-    padding-left: 18%;
-  }
 
-  .details {
-    max-width: 500px;
-    overflow: hidden;
-  }
+.background__paragraph {
+    font-size: 1.05rem;
+    margin-bottom: 2.25rem;
+}
 
-  .summary {
+.background__content {
+    max-width: 900px;
+    padding: 0 45px 10px 45px;
+    margin-top: 30px;
+    background-color: #eee7d9;  
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.background__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.background__image--right {
+    margin: 10px 15px 6px 15px;
+    float: right;
+}
+
+.background__image--left {
+    margin: 10px 20px 5px 0;
+    float: left;
+}
+
+.background__image--center {
+    max-width: 100%;
     display: block;
-  }
+    margin: 20px auto;
+} 
 
-  .summary::-webkit-details-marker {
-    display: none;
-  }
+.background__button-cast {
+    text-align: center;
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+}
 
-  .detail__heading {
-    text-decoration: underline;
-  }
+.background__button {
+    background-color: #D72638;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
 
-  .detail__content {
-    max-width: 800px;
-    box-sizing: border-box;
-    padding: 0 10px;
-    max-height: 0;
-    overflow: hidden;
-    text-indent: 5px;
-    transition: max-height 400ms ease-out, border 0ms 400ms linear;
-  }
+.background__button:hover {
+    background-color: #ffffff;
+    color:#D72638;
+    border-color: #D72638;
+}
 
-  details[open] + .detail__content {
-    max-height: 800px;
-    border-color: #888;
-    transition: max-height 200ms ease-out, border 0ms linear;
-  }
-
-  details[open] span::before {
-    rotate: 90deg;
-    transition: rotate 200ms ease-out;
-  }
-
-  /*end Award page CSS*/
-
-  .footer {
+.footer {
     background-color: black;
     border-top: 2px solid #e0e0e0;
     padding: 1.5rem 0;
-  }
+}
   
-  .footer__container {
+.footer__container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
@@ -233,42 +185,42 @@
     align-items: flex-start; 
     gap: 1rem;
     flex-wrap: wrap;
-  }
+}
   
-  .footer__logo {
+.footer__logo {
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
     gap: 0.25rem;
     line-height: 1; 
-  }
+}
   
-  .footer__logo--modern {
+.footer__logo--modern {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     font-weight: 600;
     font-size: larger;
-  }
+}
   
-  .footer__logo--family {
+.footer__logo--family {
     font-family: 'Times New Roman', Times, serif;
     color: #D72638;
     font-weight: 600;
     font-size: larger;
-  }
+}
   
-  .footer__credits {
+.footer__credits {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
     line-height: 1.4;
     padding-right: 0;
-  }
+}
   
-  .footer__credits p {
+.footer__credits p {
     margin: 0;
     font-size: 1rem;
     color: #f5d1a6;
-  }
+}
   
