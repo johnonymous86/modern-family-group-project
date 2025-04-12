@@ -75,14 +75,14 @@ body {
     color: #D72638;
 }
 
-main{
+.background__main{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-h1{
+.background__title{
     letter-spacing: 6px;
     font-size: 40px;
     text-align: center;
@@ -90,21 +90,23 @@ h1{
     margin-bottom: 0;
 }
 
-h2{
+.background__title--sub{
+    font-size: 24px;
+    letter-spacing: 2px;
     margin-top: 40px;
     margin-bottom: 15px;
 }
 
-h1, h2 {
+.background__title, .background__title--sub {
     letter-spacing: 2px;
 }
 
-.background p {
+.background__paragraph {
     font-size: 1.05rem;
     margin-bottom: 1.25rem;
 }
 
-.background {
+.background__content {
     max-width: 900px;
     padding: 0 45px 10px 45px;
     margin-top: 30px;
@@ -116,21 +118,43 @@ h1, h2 {
 .background img {
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 
-.photo1 {
+.background__image--right {
     margin: 10px 15px 6px 15px;
 }
 
-.photo2 {
+.background__image--left {
     margin: 10px 20px 5px 0;
 }
 
-.last-photo {
+.background__image--center {
     max-width: 100%;
     display: block;
     margin: 20px auto;
 } 
+
+.background__button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.background__button {
+    background-color: #D72638;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.background__button:hover {
+    background-color: #ffffff;
+    color:#D72638;
+    border-color: #D72638;
+}
 
 .footer {
     background-color: black;
@@ -187,20 +211,4 @@ h1, h2 {
 }
   
 
-@media (max-width: 768px) {
-    .nav__menu {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-    }
-
-    .footer__container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__credits{
-        align-items: center;
-        text-align: center;
-    }
 }
