@@ -4,7 +4,7 @@ body {
     color: black;
     line-height: 1.6;
     padding: 0 20px;
-  }
+}
 
 .nav {
     position: sticky;
@@ -26,54 +26,54 @@ body {
 .nav__hero {
     display: flex;
     padding: 0 10px;
-  }
+}
 
 .nav__image {
     height: 150px;
     width: 600px;
     border-radius: 4px;
     object-fit: cover;
-  }
+}
 
-  .nav__logo {
+.nav__logo {
     font-size: 1.8rem;
     font-weight: bold;
     display: flex;
     gap: 0.25rem;
     align-items: flex-start;
-  }
+}
   
-  .nav__logo--modern {
+.nav__logo--modern {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     font-weight: 600;
     font-size: larger;
-    padding-left: 20px;
-  }
+}
   
-  .nav__logo--family {
+.nav__logo--family {
     font-family:'Times New Roman', Times, serif;
     color: #D72638;
     font-weight: 600;
     font-size: larger;
-  }
+    padding-right: 20px;
+}
 
-  .nav__menu {
+.nav__menu {
     list-style: none;
     display: flex;
-  }
+}
 
 
-  .nav__link {
+.nav__link {
     text-decoration: none;
     color: #f5d1a6; 
     font-weight: 500;
     padding-right: 10px;
-  }
+}
 
-  .nav__link:hover {
+.nav__link:hover {
     color: #D72638;
-  }
+}
 
 main{
     display: flex;
@@ -108,7 +108,6 @@ h1{
     margin: 10px 5px 5px 20px;
 }
 
-
 .photo2 {
     margin: 10px 20px 5px 0;
 }
@@ -119,12 +118,8 @@ h1{
     margin: 20px auto;
 } 
 
-
-
-
-
 .footer {
-    background-color: #F4E4C5;
+    background-color: black;
     border-top: 2px solid #e0e0e0;
     padding: 1.5rem 0;
 }
@@ -150,7 +145,7 @@ h1{
   
 .footer__logo--modern {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: white;
     font-weight: 600;
     font-size: larger;
 }
@@ -168,12 +163,13 @@ h1{
     align-items: flex-end;
     text-align: right;
     line-height: 1.4;
+    padding-right: 0;
 }
   
 .footer__credits p {
     margin: 0;
-    font-size: 0.95rem;
-    color: #555;
+    font-size: 1rem;
+    color: #f5d1a6;
 }
   
 
