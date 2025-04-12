@@ -94,6 +94,12 @@ main{
   font-size: 2rem;
 }
 
+.stream {
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .home_image {
   display: block;
   margin: auto;
