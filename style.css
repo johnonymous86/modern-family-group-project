@@ -115,7 +115,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.background img {
+.background__image {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
@@ -135,9 +135,11 @@ body {
     margin: 20px auto;
 } 
 
-.background__button-wrapper {
+.background__button-cast {
     text-align: center;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .background__button {
@@ -146,7 +148,7 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: normal;
     transition: background-color 0.3s ease;
 }
 
