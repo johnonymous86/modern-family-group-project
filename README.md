@@ -7,9 +7,10 @@ This website was designed to pay homage to the tv show Modern Family and provide
  ### Kativa Athalye- Home Page
  ### Amani Flood- Background Page
  ### Vicky Mak- Cast Page, Style Sheet
- ### John Caudill- Awards Page
- ### Mary Sweisgood-Brisk- Responsivity, README file, animations
+ ### John Caudill- Group leader, Awards Page
+ ### Mary Sweisgood-Brisk- Responsivity, Animations, README file
 
  ## Challenges
   ### Logo allignment was not consistant between pages. Added it in the html file and it rectified the issue.
   ### Using branches for the first time was challenging. We were having issues with commits and knowing when we should merge so that the responsivity could be completed.
+  ### Pages assigned while Mary Sweisgood-Brisk was unavailable due to a family emergency. She was assigned the task of making the site is more dynamic and responsive.
