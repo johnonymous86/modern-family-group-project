@@ -14,3 +14,4 @@ This website was designed to pay homage to the tv show Modern Family and provide
   ### Logo allignment was not consistant between pages. Added it in the html file and it rectified the issue.
   ### Using branches for the first time was challenging. We were having issues with commits and knowing when we should merge so that the responsivity could be completed.
   ### Pages assigned while Mary Sweisgood-Brisk was unavailable due to a family emergency. She was assigned the task of making the site is more dynamic and responsive.
+  ### When individual pages were completed, we had issues merging the responsive css and css animations to the merged file. We were eventually able to find a solution.
