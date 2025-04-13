@@ -457,7 +457,9 @@ text-align: left;
     color: #f5d1a6;
 }
   
+/* start responsive css */
 
+/* mobile */
 @media (max-width: 600px) {
     .nav__container,
     .footer__container {
@@ -523,3 +525,37 @@ text-align: left;
     }
 }
 
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav__container,
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+.background__content {
+        padding: 0 30px;
+    }
+
+    .home_image {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .button {
+        margin: 20px auto;
+        width: 60%;
+    }
+
+    .footer__credits {
+        text-align: center;
+        align-items: center;
+    }
+}
