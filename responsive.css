@@ -559,3 +559,20 @@ text-align: left;
         align-items: center;
     }
 }
+
+/* desktop */
+@media (min-width: 1025px) {
+    .background__content {
+        padding: 0 45px;
+    }
+
+    .home_image {
+        width: 800px;
+    }
+
+    .button {
+        width: auto;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
