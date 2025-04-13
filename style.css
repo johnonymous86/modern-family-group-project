@@ -82,6 +82,53 @@ body {
     color: #D72638;
 }
 
+/*Begin Awards page styles*/
+.awards__content {
+padding-left: 18%;
+}
+
+.details {
+max-width: 500px;
+overflow: hidden;
+}
+
+.summary {
+display: block;
+}
+
+.summary::-webkit-details-marker {
+display: none;
+}
+
+.detail__heading {
+text-decoration: underline;
+}
+
+.detail__content {
+max-width: 800px;
+box-sizing: border-box;
+padding: 0 10px;
+max-height: 0;
+overflow: hidden;
+text-indent: 5px;
+transition: max-height 400ms ease-out, border 0ms 400ms linear;
+}
+
+details[open] + .detail__content {
+max-height: 800px;
+border-color: #888;
+transition: max-height 200ms ease-out, border 0ms linear;
+}
+
+details[open] span::before {
+rotate: 90deg;
+transition: rotate 200ms ease-out;
+}
+
+/*end Award page CSS*/
+
+
+ /*Start Background page CSS*/
 .background__main{
     display: flex;
     justify-content: center;
@@ -169,6 +216,7 @@ body {
     color:#D72638;
     border-color: #D72638;
 }
+ /*End Background page CSS*/
 
 .footer {
     background-color: black;
