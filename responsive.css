@@ -1,3 +1,4 @@
+/* Base reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,454 +13,35 @@ body {
     padding: 0 20px;
 }
 
-.nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: black;
-    border-bottom: 2px solid #e0e0e0;
-    padding: 1rem 0;
-}
-
-.nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.nav__hero {
-    display: flex;
-    padding: 0 10px;
-}
-
-.nav__image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-.nav__logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: flex;
-    gap: 0.25rem;
-    align-items: flex-start;
-}
-  
-.nav__logo--modern {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
-    color: white;
-    font-weight: 600;
-    font-size: larger;
-}
-  
-.nav__logo--family {
-    padding-left: 5px;
-    font-family:'Times New Roman', Times, serif;
-    color: #D72638;
-    font-weight: 600;
-    font-size: larger;
-}
-
-.nav__menu {
-    list-style: none;
-    display: flex;
-}
-
-
-.nav__link {
-    text-decoration: none;
-    color: #f5d1a6; 
-    font-weight: 500;
-    padding-right: 10px;
-}
-
-.nav__link:hover {
-    color: #D72638;
-}
-
-/*Begin Awards page styles*/
-.awards__content {
-padding-left: 18%;
-}
-
-.details {
-max-width: 500px;
-overflow: hidden;
-}
-
-.summary {
-display: block;
-}
-
-.summary::-webkit-details-marker {
-display: none;
-}
-
-.detail__heading {
-text-decoration: underline;
-}
-
-.detail__content {
-max-width: 800px;
-box-sizing: border-box;
-padding: 0 10px;
-max-height: 0;
-overflow: hidden;
-text-indent: 5px;
-transition: max-height 400ms ease-out, border 0ms 400ms linear;
-}
-
-details[open] + .detail__content {
-max-height: 800px;
-border-color: #888;
-transition: max-height 200ms ease-out, border 0ms linear;
-}
-
-details[open] span::before {
-rotate: 90deg;
-transition: rotate 200ms ease-out;
-}
-
-/*end Award page CSS*/
-
-
- /*Start Background page CSS*/
-.background__main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.background__title{
-    letter-spacing: 6px;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 0;
-}
-
-.background__title--sub{
-    font-size: 24px;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-
-
-.background__title, .background__title--sub {
-    letter-spacing: 2px;
-}
-
-
-.background__paragraph {
-    font-size: 1.05rem;
-    margin-bottom: 2.25rem;
-}
-
-.background__content {
-    max-width: 900px;
-    padding: 0 45px 10px 45px;
-    margin-top: 30px;
-    background-color: #eee7d9;  
-    border-radius: 8px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-}
-
-.background__image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-.background__image--right {
-    margin: 10px 15px 6px 15px;
-    float: right;
-}
-
-.background__image--left {
-    margin: 10px 20px 5px 0;
-    float: left;
-}
-
-.background__image--center {
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
-} 
-
-.background__button-cast {
-    text-align: center;
-    margin: 100px 0px;
-    display: flex;
-    justify-content: center;
-}
-
+/* Hover & Animation Styles */
+.button,
 .background__button {
-    background-color: #D72638;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    letter-spacing: 2px;
-    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
+.button:hover,
 .background__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    color:#D72638;
+    color: #D72638;
     border-color: #D72638;
 }
- /*End Background page CSS*/
 
-
-.cast {
-  max-width: 1100px;
-  margin: 2rem auto;
-  text-align: center;
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
 
-.cast__title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #222;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
-.cast__title--highlight {
-  color: #D72638;
-  font-family: 'Georgia', serif;
-}
-
-.cast__gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-}
-
-.cast__member {
-  width: 180px;
-  height: 280px;
-  perspective: 1000px;
-}
-
-.cast__card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.cast__member:hover .cast__card {
-  transform: rotateY(180deg);
-}  
-
-.cast__card--front,
-.cast__card--back {
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-background-color: #fff;
-border: 4px solid #D72638;
-border-radius: 6px;
-padding: 1rem;
-box-sizing: border-box;
-}
-
-.cast__card--front {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cast__photo {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 4px;
-}  
-
-.cast__name {
-  margin-top: 0.75rem;
-  font-weight: 500;
-  color: #0047AB;
-  text-align: center;
-}
-
-.cast__card--back {
-  transform: rotateY(180deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #444;
-  font-size: 0.9rem;
-  padding: 1rem;
-}
-
-/*Begin Awards page styles*/
-
-.awards__content {
-  padding-left: 18%;
-}
-
-.details {
-  max-width: 500px;
-  overflow: hidden;
-}
-
-.summary {
-  display: block;
-}
-
-.summary::-webkit-details-marker {
-  display: none;
-}
-
-.detail__heading {
-  text-decoration: underline;
-}
-
-.detail__content {
-  max-width: 800px;
-  box-sizing: border-box;
-  padding: 0 10px;
-  max-height: 0;
-  overflow: hidden;
-  text-indent: 5px;
-  transition: max-height 400ms ease-out, border 0ms 400ms linear;
-}
-
-details[open] + .detail__content {
-  max-height: 800px;
-  border-color: #888;
-  transition: max-height 200ms ease-out, border 0ms linear;
-}
-
-details[open] span::before {
-  rotate: 90deg;
-  transition: rotate 200ms ease-out;
-}
-
-/*end Award page CSS*/
-
-
-.home_title {
-  margin-top: 40px;;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.stream {
-  justify-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.home_image {
-  display: block;
-  margin: auto;
-  width: 800px;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.home_writers, .home_producers {
-text-align: left;
-}
-
-.button {
-  color: white;
-  text-decoration: none;
-  font-family: 'Gill Sans';
-  font-size: 14px;
-  text-align: center;
-  padding: 0 30px;
-  line-height: 30px;
-  display: block;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  background-image: linear-gradient(#D72638 45%, #b91122 55%);
-  box-shadow: 0 2px 2px #888888;
-  transition: color 0.3s, background-image 0.5s, ease-in-out;
-}
-
-.button:hover {
-  background-image: linear-gradient(#f5d1a6 49%, #f3c388 51%);
-  color: black;
-}
-
-.footer {
-    background-color: black;
-    border-top: 2px solid #e0e0e0;
-    padding: 1.5rem 0;
-}
-  
-.footer__container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-  
-.footer__logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    gap: 0.25rem;
-    line-height: 1; 
-}
-  
-.footer__logo--modern {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-weight: 600;
-    font-size: larger;
-}
-  
-.footer__logo--family {
-    font-family: 'Times New Roman', Times, serif;
-    color: #D72638;
-    font-weight: 600;
-    font-size: larger;
-}
-  
-.footer__credits {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    line-height: 1.4;
-    padding-right: 0;
-}
-  
-.footer__credits p {
-    margin: 0;
-    font-size: 1rem;
-    color: #f5d1a6;
-}
-  
-/* start responsive css */
-
-/* mobile */
+/* Mobile */
 @media (max-width: 600px) {
     .nav__container,
     .footer__container {
@@ -506,7 +88,8 @@ text-align: left;
         width: 100%;
     }
 
-    .button {
+    .button,
+    .background__button {
         margin: 20px auto;
         width: 80%;
     }
@@ -525,7 +108,7 @@ text-align: left;
     }
 }
 
-/* tablet */
+/* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
     .nav__container,
     .footer__container {
@@ -540,7 +123,7 @@ text-align: left;
         gap: 15px;
     }
 
-.background__content {
+    .background__content {
         padding: 0 30px;
     }
 
@@ -549,7 +132,8 @@ text-align: left;
         max-width: 600px;
     }
 
-    .button {
+    .button,
+    .background__button {
         margin: 20px auto;
         width: 60%;
     }
@@ -560,7 +144,7 @@ text-align: left;
     }
 }
 
-/* desktop */
+/* Desktop */
 @media (min-width: 1025px) {
     .background__content {
         padding: 0 45px;
@@ -570,7 +154,8 @@ text-align: left;
         width: 800px;
     }
 
-    .button {
+    .button,
+    .background__button {
         width: auto;
         margin-left: 30%;
         margin-right: 30%;
