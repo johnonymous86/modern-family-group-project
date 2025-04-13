@@ -170,6 +170,7 @@ body {
     border-color: #D72638;
 }
 
+
 .cast {
   max-width: 1100px;
   margin: 2rem auto;
@@ -303,6 +304,56 @@ details[open] span::before {
 }
 
 /*end Award page CSS*/
+
+
+.home_title {
+  margin-top: 40px;;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.stream {
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home_image {
+  display: block;
+  margin: auto;
+  width: 800px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home_writers, .home_producers {
+text-align: left;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  font-family: 'Gill Sans';
+  font-size: 14px;
+  text-align: center;
+  padding: 0 30px;
+  line-height: 30px;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(#D72638 45%, #b91122 55%);
+  box-shadow: 0 2px 2px #888888;
+  transition: color 0.3s, background-image 0.5s, ease-in-out;
+}
+
+.button:hover {
+  background-image: linear-gradient(#f5d1a6 49%, #f3c388 51%);
+  color: black;
+}
 
 .footer {
     background-color: black;
